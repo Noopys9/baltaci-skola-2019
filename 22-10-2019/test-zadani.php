@@ -1,24 +1,36 @@
-# Zadani testu na zaklady PHP
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 
-1. Definujte v PHP promennou s nazvem **cislo** a hodnotou **326**. Tuto promennou vypiste.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pisemna prace</title>
+</head>
+<body>
+    <!-- 1. Definujte v PHP promennou s nazvem **cislo** a hodnotou **326**. Tuto promennou vypiste. -->
+        $cislo ="326"; 
+        echo $cislo;
+    <!-- 2. Definujte promennou s nazvem **pole** a ulozte do nej pole obsahujici 4 pismena: **a**, **h**, **o** a **j**.
+    Vytvorte cyklus, ktery postupne vypise vsechny prvky promenne **pole** tak, aby vypis vypadal nasledovne: **ahoj** -->
+        $pole = array ("a", "h", "o", "j");
+        for($c = 0; $c < count($s); $c++){
+                                   echo "$s[$c];
+    <!-- 3. Vytvorte promennou s nazvem **jmena** a ulozte do ni 3 jmena: **Karel**, **Josef** a **Veronika**.
+    Vypiste 3. prvek pole **jmena**. -->
+        $jmena = ["Karel", "Josef", "Veronika"];
+            echo $jmena[1];
+    <!-- 4. Predpokladejme, ze potrebujete vlozit php kod do HTML stranky. Napiste kod, ktery vytvori promennou s nazvem **uzivatel** a ulozte do ni hodnotu **Barbora** a tuto promennou vypiste pomoci operatoru konkatenace tak, aby vypis vypadal nasledovne: **Prihlaseny uzivatel: Barbora**.
+    Cely HTML kod zabalte do potrebnych znacek tak, aby bylo mozne ho umistit primo do HTML souboru. -->
 
-2. Definujte promennou s nazvem **pole** a ulozte do nej pole obsahujici 4 pismena: **a**, **h**, **o** a **j**.
-Vytvorte cyklus, ktery postupne vypise vsechny prvky promenne **pole** tak, aby vypis vypadal nasledovne:
-**ahoj**.
+    <!-- 5. Vytvorte promennou **format** obsahujici text **odstavec**.
+    Vytvorte promennou **obsah** obsahujici text **Velmi zajimavy obsah**.
+    Vytvorte podminku, ktera vypise:
+    	- promennou **obsah** do html elementu **p** v pripade, ze promenna **format** obsahuje text **odstavec**
+    	- promennou **obsah** do html elementu **div** v kazdem jinem pripade.
+    Hint: Pouzijte operator konkatenace. -->
 
-3. Vytvorte promennou s nazvem **jmena** a ulozte do ni 3 jmena: **Karel**, **Josef** a **Veronika**.
-Vypiste 3. prvek pole **jmena**.
-
-4. Predpokladejme, ze potrebujete vlozit php kod do HTML stranky. Napiste kod, ktery vytvori promennou s nazvem **uzivatel** a ulozte do ni hodnotu **Barbora** a tuto promennou vypiste pomoci operatoru konkatenace tak, aby vypis vypadal nasledovne: **Prihlaseny uzivatel: Barbora**.
-Cely HTML kod zabalte do potrebnych znacek tak, aby bylo mozne ho umistit primo do HTML souboru.
-
-5. Vytvorte promennou **format** obsahujici text **odstavec**.
-Vytvorte promennou **obsah** obsahujici text **Velmi zajimavy obsah**.
-Vytvorte podminku, ktera vypise:
- - promennou **obsah** do html elementu **p** v pripade, ze promenna **format** obsahuje text **odstavec**
- - promennou **obsah** do html elementu **div** v kazdem jinem pripade.
-Hint: Pouzijte operator konkatenace.
-
-**Zobrazeni vaseho souboru:**http://localhost/uvodphp/test-zadani.php
-
-**Vysledny ukol udeslete na email:** mjanousek92@gmail.com
+</body>
+</html>
